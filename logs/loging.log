@@ -1,0 +1,43 @@
+2017-04-01 22:36:23 ERROR DomDocumentParser:30 - Exception with file parsing: 
+java.io.FileNotFoundException: C:\Program Files\Eclipse\Neon\eclipse\workspace\Chef\resoures\chefData.xml (Системе не удается найти указанный путь)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.epam.task3.util.DomDocumentParser.<init>(DomDocumentParser.java:27)
+	at com.epam.task3.main.Main.main(Main.java:17)
+2017-04-03 14:22:42 ERROR SaladManager:161 - Error in method makeSalad: 
+java.lang.IllegalArgumentException: Salad with name <unknown> not found
+	at com.epam.task3.util.SaladManager.makeSalad(SaladManager.java:160)
+	at com.epam.task3.util.SaladManager.getSalad(SaladManager.java:35)
+	at com.epam.task3.main.Main.main(Main.java:41)
+2017-04-03 14:41:17 ERROR SaladManager:161 - Error in method makeSalad: 
+java.lang.IllegalArgumentException: Salad with name <unknown> not found
+	at com.epam.task3.util.SaladManager.makeSalad(SaladManager.java:160)
+	at com.epam.task3.util.SaladManager.getSalad(SaladManager.java:35)
+	at com.epam.task3.main.Main.main(Main.java:45)
+2017-04-03 14:58:22 ERROR SaladManager:161 - Error in method makeSalad: 
+java.lang.IllegalArgumentException: Salad with name <unknown> not found
+	at com.epam.task3.util.SaladManager.makeSalad(SaladManager.java:160)
+	at com.epam.task3.util.SaladManager.getSalad(SaladManager.java:35)
+	at com.epam.task3.main.Main.main(Main.java:42)
+2017-04-03 15:06:50 ERROR SaladManager:171 - Error in method makeSalad: 
+java.lang.IllegalArgumentException: Salad with name <unknown> not found
+	at com.epam.task3.util.SaladManager.makeSalad(SaladManager.java:170)
+	at com.epam.task3.util.SaladManager.getSalad(SaladManager.java:35)
+	at com.epam.task3.main.Main.main(Main.java:43)
+2017-04-03 15:08:47 ERROR SaladManager:171 - Error in method makeSalad: 
+java.lang.IllegalArgumentException: Salad with name <unknown> not found
+	at com.epam.task3.util.SaladManager.makeSalad(SaladManager.java:170)
+	at com.epam.task3.util.SaladManager.getSalad(SaladManager.java:35)
+	at com.epam.task3.main.Main.main(Main.java:41)

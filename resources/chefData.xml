@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<vegetables>
+		<vegetable>
+			<name>Potato</name>
+			<caloricityPerGramm>2</caloricityPerGramm>
+			<proteinsPerGramm>0.1</proteinsPerGramm>
+			<fatPerGramm>0.1</fatPerGramm>
+			<carbohydratesPerGramm>0.4</carbohydratesPerGramm>
+		</vegetable>
+		<vegetable>
+			<name>Tomato</name>
+			<caloricityPerGramm>1</caloricityPerGramm>
+			<proteinsPerGramm>0.05</proteinsPerGramm>
+			<fatPerGramm>0.03</fatPerGramm>
+			<carbohydratesPerGramm>0.2</carbohydratesPerGramm>
+		</vegetable>
+		<vegetable>
+			<name>Radish</name>
+			<caloricityPerGramm>0.7</caloricityPerGramm>
+			<proteinsPerGramm>0.05</proteinsPerGramm>
+			<fatPerGramm>0.02</fatPerGramm>
+			<carbohydratesPerGramm>0.3</carbohydratesPerGramm>
+		</vegetable>
+		<vegetable>
+			<name>Onion</name>
+			<caloricityPerGramm>0.8</caloricityPerGramm>
+			<proteinsPerGramm>0.015</proteinsPerGramm>
+			<fatPerGramm>0.07</fatPerGramm>
+			<carbohydratesPerGramm>0.35</carbohydratesPerGramm>
+		</vegetable>
+		<vegetable>
+			<name>Cucumber</name>
+			<caloricityPerGramm>0.5</caloricityPerGramm>
+			<proteinsPerGramm>0.02</proteinsPerGramm>
+			<fatPerGramm>0.05</fatPerGramm>
+			<carbohydratesPerGramm>0.2</carbohydratesPerGramm>
+		</vegetable>
+		<vegetable>
+			<name>Cabbage</name>
+			<caloricityPerGramm>0.7</caloricityPerGramm>
+			<proteinsPerGramm>0.1</proteinsPerGramm>
+			<fatPerGramm>0.1</fatPerGramm>
+			<carbohydratesPerGramm>0.4</carbohydratesPerGramm>
+		</vegetable>
+		<vegetable>
+			<name>Bell Pepper</name>
+			<caloricityPerGramm>0.7</caloricityPerGramm>
+			<proteinsPerGramm>0.07</proteinsPerGramm>
+			<fatPerGramm>0.09</fatPerGramm>
+			<carbohydratesPerGramm>0.4</carbohydratesPerGramm>
+		</vegetable>
+		<vegetable>
+			<name>Carrot</name>
+			<caloricityPerGramm>0.8</caloricityPerGramm>
+			<proteinsPerGramm>0.08</proteinsPerGramm>
+			<fatPerGramm>0.1</fatPerGramm>
+			<carbohydratesPerGramm>0.45</carbohydratesPerGramm>
+		</vegetable>
+		<vegetable>
+			<name>Beet</name>
+			<caloricityPerGramm>0.9</caloricityPerGramm>
+			<proteinsPerGramm>0.085</proteinsPerGramm>
+			<fatPerGramm>0.1</fatPerGramm>
+			<carbohydratesPerGramm>0.5</carbohydratesPerGramm>
+		</vegetable>
+	</vegetables>
+	<salads>
+		<salad>
+			<name>Vitaminic</name>
+			<vegName weight = "500">Cabbage</vegName>
+			<vegName weight = "100">Bell Pepper</vegName>
+			<vegName weight = "100">Onion</vegName>
+			<vegName weight = "100">Carrot</vegName>
+		</salad>
+		<salad>
+			<name>Freshy</name>
+			<vegName weight = "300">Tomato</vegName>
+			<vegName weight = "200">Cucumber</vegName>
+			<vegName weight = "100">Beet</vegName>
+		</salad>
+	</salads>
+</root>
