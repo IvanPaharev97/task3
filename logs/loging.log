@@ -41,3 +41,8 @@ java.lang.IllegalArgumentException: Salad with name <unknown> not found
 	at com.epam.task3.util.SaladManager.makeSalad(SaladManager.java:170)
 	at com.epam.task3.util.SaladManager.getSalad(SaladManager.java:35)
 	at com.epam.task3.main.Main.main(Main.java:41)
+2017-04-05 13:40:13 ERROR SaladManager:76 - Error in method findProduct: 
+java.lang.IllegalArgumentException: Product with name <Potato> not found
+	at com.epam.task3.util.VegetableManager.findProduct(VegetableManager.java:75)
+	at com.epam.task3.util.VegetableManager.getProduct(VegetableManager.java:31)
+	at com.epam.task3.main.Main.main(Main.java:31)

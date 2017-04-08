@@ -1,8 +1,6 @@
-package com.epam.task3.vegetable;
+package com.epam.task3.entity;
 
-public class Vegetable implements Comparable<Vegetable>{
-    private String name;
-    private double caloriesPerGramm;
+public class Vegetable extends Product{
     private double proteinsPerGramm;
     private double fatPerGramm;
     private double carbohydratesPerGramm;
@@ -12,20 +10,10 @@ public class Vegetable implements Comparable<Vegetable>{
             double proteinsPerGramm,
             double fatPerGramm,
             double carbohydratesPerGramm) {
-        super();
-        this.name = name;
-        this.caloriesPerGramm = caloriesPerGramm;
+        super(name, caloriesPerGramm);
         this.proteinsPerGramm = proteinsPerGramm;
         this.fatPerGramm = fatPerGramm;
         this.carbohydratesPerGramm = carbohydratesPerGramm;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getCaloricity() {
-        return caloriesPerGramm;
     }
 
     public double getProteinsPerGramm() {
@@ -42,34 +30,20 @@ public class Vegetable implements Comparable<Vegetable>{
 
     @Override
     public String toString() {
-        return "Vegetable [name=" + name + ", caloriesPerGramm=" + caloriesPerGramm + ", proteinsPerGramm="
+        return "Vegetable [name=" + getName() + ", caloriesPerGramm=" + getCaloriesPerGramm() + ", proteinsPerGramm="
                 + proteinsPerGramm + ", fatPerGramm=" + fatPerGramm + ", carbohydratesPerGramm=" + carbohydratesPerGramm
                 + "]";
-    }
-
-    @Override
-    public int compareTo(Vegetable otherVegetable) {
-        if (caloriesPerGramm > otherVegetable.caloriesPerGramm) {
-            return 1;
-        }
-        if (caloriesPerGramm < otherVegetable.caloriesPerGramm) {
-            return -1;
-        }
-        return 0;
     }    
        
     @Override
     public int hashCode() {
         final int prime = 31;
-        int result = 1;
+        int result = super.hashCode();
         long temp;
-        temp = Double.doubleToLongBits(caloriesPerGramm);
-        result = prime * result + (int) (temp ^ (temp >>> 32));
         temp = Double.doubleToLongBits(carbohydratesPerGramm);
         result = prime * result + (int) (temp ^ (temp >>> 32));
         temp = Double.doubleToLongBits(fatPerGramm);
         result = prime * result + (int) (temp ^ (temp >>> 32));
-        result = prime * result + ((name == null) ? 0 : name.hashCode());
         temp = Double.doubleToLongBits(proteinsPerGramm);
         result = prime * result + (int) (temp ^ (temp >>> 32));
         return result;
@@ -79,21 +53,14 @@ public class Vegetable implements Comparable<Vegetable>{
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
-        if (obj == null)
+        if (!super.equals(obj))
             return false;
         if (getClass() != obj.getClass())
             return false;
         Vegetable other = (Vegetable) obj;
-        if (Double.doubleToLongBits(caloriesPerGramm) != Double.doubleToLongBits(other.caloriesPerGramm))
-            return false;
         if (Double.doubleToLongBits(carbohydratesPerGramm) != Double.doubleToLongBits(other.carbohydratesPerGramm))
             return false;
         if (Double.doubleToLongBits(fatPerGramm) != Double.doubleToLongBits(other.fatPerGramm))
-            return false;
-        if (name == null) {
-            if (other.name != null)
-                return false;
-        } else if (!name.equals(other.name))
             return false;
         if (Double.doubleToLongBits(proteinsPerGramm) != Double.doubleToLongBits(other.proteinsPerGramm))
             return false;
@@ -110,6 +77,10 @@ public class Vegetable implements Comparable<Vegetable>{
         public VegetableBuilder(String name, double caloriesPerGramm) {
             this.name = name;
             this.caloriesPerGramm = caloriesPerGramm;
+        }
+        
+        public VegetableBuilder(Product product) {
+            this(product.getName(), product.getCaloriesPerGramm());
         }
         
         public VegetableBuilder setProteinsPerGramm(double proteinsPerGramm) {
